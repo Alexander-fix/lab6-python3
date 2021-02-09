@@ -88,8 +88,11 @@ if __name__ == '__main__':
                 if train.get('number', '') == parts[1]:
                     count += 1
                     print(
-                        '{:>4}: {}, {}, {}'.format(count, train.get('name', ' '), train.get('number', ' '),
-                                           train.get('time', ' '))
+                        '{:>4}: {}, {}, {}'.format(
+                            count,
+                            train.get('name', ' '),
+                            train.get('number', ' '),
+                            train.get('time', ' '))
                     )
 
             # Если счетчик равен 0, то поезд не найден.
